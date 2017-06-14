@@ -122,11 +122,11 @@ gulp.task('default', ['sass', 'js', 'nunjucksRender', 'browserSync'], function()
 });
 
 /** build docs **/
-gulp.task('docs', ['clean', 'sass', 'js', 'nunjucksRender', 'fonts', 'images', 'useref', 'cname'], function(){
+gulp.task('docs', ['clean', 'sass', 'js', 'nunjucksRender', 'fonts', 'images', 'useref'], function(){
     console.log('Building docs...');
 });
 
 /** build dist **/
-gulp.task('build', ['dist-clean', 'dist-css','compress-css','dist-js','compress-js', 'images'], function(){
+gulp.task('build', ['dist-clean', 'dist-css','compress-css','dist-js','compress-js'], function(){
     console.log('Building dist...');
 })
