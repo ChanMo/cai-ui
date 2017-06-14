@@ -194,3 +194,110 @@ a:hover, a:active {
     }
   }
 }
+
+.detail {
+  background-image: url(../img/detail_main.jpg);
+  .container {
+    padding: 1rem .5rem;
+  }
+  & > .container > table {
+    background: #012e70;
+    box-shadow: 2px 2px 1px 2px rgba(black, 0.6);
+    & > tbody > tr {
+      & > td {
+        border: none;
+      }
+    }
+  }
+  .detail-left {
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    border: 2px solid #074391;
+    background: #021d44;
+    text-align: center;
+    h2 {
+      color: gold;
+      font-size: 1.75rem;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        line-height: 2.5rem;
+        border-bottom: 1px solid #132e5a;
+        a {
+          color: white;
+        }
+        &:hover a {
+          color: gold;
+        }
+      }
+    }
+  }
+  .detail-right {
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    border: 2px solid #074391;
+    background: #072a65;
+    color: rgba(white, 0.87);
+    h4 {
+      font-size: 1.25rem;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid #074391;
+    }
+    table {
+      background: transparent;
+      .required > td:first-child {
+        label {
+          &:before {
+            content: "*";
+            color: red;
+            margin-right: .25rem;
+          }
+        }
+      }
+      td {
+        padding: 0.25rem .5rem;
+        border: none;
+        input {
+          width: 300px;
+          max-width: 100%;
+          margin-bottom: 0;
+          height: 2rem;
+          line-height: 2rem;
+          padding: 0 .5rem;
+          border: 2px solid #074391;
+          font-size: 0.85rem;
+          background: #013175;
+          color: rgba(white, 0.85);
+        }
+        &:first-child {
+          line-height: 2rem;
+          text-align: right;
+          font-size: 0.85rem;
+        }
+        span {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .valid-code {
+      input {
+        display: inline-block;
+        width: 120px;
+      }
+      img {
+        height: 1.8rem;
+      }
+    }
+    .form-action {
+      text-align: center;
+    }
+    .button {
+      padding: 0.25rem 1rem;
+      background: #e6e6e6;
+      color: rgba(black, 0.85);
+    }
+  }
+}

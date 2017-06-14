@@ -1598,6 +1598,83 @@ a:hover, a:active {
       font-size: 1.2rem;
       color: rgba(255, 255, 255, 0.85); }
 
+.detail {
+  background-image: url(../img/detail_main.jpg); }
+  .detail .container {
+    padding: 1rem .5rem; }
+  .detail > .container > table {
+    background: #012e70;
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.6); }
+    .detail > .container > table > tbody > tr > td {
+      border: none; }
+  .detail .detail-left {
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    border: 2px solid #074391;
+    background: #021d44;
+    text-align: center; }
+    .detail .detail-left h2 {
+      color: gold;
+      font-size: 1.75rem; }
+    .detail .detail-left ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      .detail .detail-left ul li {
+        line-height: 2.5rem;
+        border-bottom: 1px solid #132e5a; }
+        .detail .detail-left ul li a {
+          color: white; }
+        .detail .detail-left ul li:hover a {
+          color: gold; }
+  .detail .detail-right {
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    border: 2px solid #074391;
+    background: #072a65;
+    color: rgba(255, 255, 255, 0.87); }
+    .detail .detail-right h4 {
+      font-size: 1.25rem;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid #074391; }
+    .detail .detail-right table {
+      background: transparent; }
+      .detail .detail-right table .required > td:first-child label:before {
+        content: "*";
+        color: red;
+        margin-right: .25rem; }
+      .detail .detail-right table td {
+        padding: 0.25rem .5rem;
+        border: none; }
+        .detail .detail-right table td input {
+          width: 300px;
+          max-width: 100%;
+          margin-bottom: 0;
+          height: 2rem;
+          line-height: 2rem;
+          padding: 0 .5rem;
+          border: 2px solid #074391;
+          font-size: 0.85rem;
+          background: #013175;
+          color: rgba(255, 255, 255, 0.85); }
+        .detail .detail-right table td:first-child {
+          line-height: 2rem;
+          text-align: right;
+          font-size: 0.85rem; }
+        .detail .detail-right table td span {
+          font-size: 0.8rem; }
+    .detail .detail-right .valid-code input {
+      display: inline-block;
+      width: 120px; }
+    .detail .detail-right .valid-code img {
+      height: 1.8rem; }
+    .detail .detail-right .form-action {
+      text-align: center; }
+    .detail .detail-right .button {
+      padding: 0.25rem 1rem;
+      background: #e6e6e6;
+      color: rgba(0, 0, 0, 0.85); }
+
 .main {
   max-width: 100%; }
 

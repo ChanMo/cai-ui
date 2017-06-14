@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="detail-banner">
+  <img src="img/detail_top.jpg">
+</div>
+<div class="detail">
+  <div class="container">
+  <table>
+    <tr>
+      <td>
+        <div class="detail-left">
+        <h2>欢迎光临</h2>
+        <ul>
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">常见问题</a></li>
+          <li><a href="#">一般常见问题</a></li>
+          <li><a href="#">技术问题</a></li>
+          <li><a href="#">存款取款</a></li>
+          <li><a href="#">最新优惠</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+        </div>
+      </td>
+      <td>
+        <div class="detail-right">
+        <h4>会员注册</h4>
+        <form>
+          <table>
+            <tr>
+              <td><label>推荐人帐号:</label></td>
+              <td>
+                <input type="text" placeholder="(非必填)">
+              </td>
+            </tr>
+            <tr class="required">
+              <td><label>会员帐号:</label></td>
+              <td>
+                <input type="text">
+                <span>帐号规则：帐号必须为6-15</span>
+              </td>
+            </tr>
+            <tr class="required">
+              <td><label>登录密码:</label></td>
+              <td>
+                <input type="password">
+              </td>
+            </tr>
+            <tr class="required">
+              <td><label>确认密码:</label></td>
+              <td>
+                <input type="password">
+              </td>
+            </tr>
+            <tr class="required">
+              <td><label>真实姓名:</label></td>
+              <td><input type="text"></td>
+            </tr>
+            <tr class="required">
+              <td><label>取款密码:</label></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td><label>电子邮箱:</label></td>
+              <td><input type="email"></td>
+            </tr>
+            <tr class="valid-code">
+              <td><label>验证码:</label></td>
+              <td>
+                <input type="text">
+                <img src="http://jdv9.com/user/vcode/1497409535">
+              </td>
+            </tr>
+          </table>
+          <div class="form-action">
+            <input class="button" type="submit" value="立即提交">
+            <input class="button" type="reset" value="重新填写">
+          </div>
+        </form>
+        </div>
+      </td>
+    </tr>
+  </table>
+  </div>
+</div>
+{% endblock %}
