@@ -200,12 +200,22 @@ a:hover, a:active {
   .container {
     padding: 1rem .5rem;
   }
+  .detail-page {
+    p {
+      font-size: 0.85rem;
+      color: rgba(white, 0.87);
+    }
+  }
   & > .container > table {
     background: #012e70;
     box-shadow: 2px 2px 1px 2px rgba(black, 0.6);
     & > tbody > tr {
       & > td {
         border: none;
+        &:first-child {
+          white-space: nowrap;
+          width: 260px;
+        }
       }
     }
   }
