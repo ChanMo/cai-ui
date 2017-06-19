@@ -38,6 +38,16 @@ a:hover, a:active {
   box-sizing: border-box;
 }
 
+.banner {
+  .slide {
+    height: 400px;
+  }
+  .slide__nav {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
 .header {
   background-image: url(../img/header.png);
   background-size: cover;
@@ -48,7 +58,10 @@ a:hover, a:active {
       font-size: 0.85rem;
     }
   }
+  .logo {
+  }
   .container {
+    position: relative;
     &:before, &:after {
       content: '';
       display: block;
@@ -56,9 +69,9 @@ a:hover, a:active {
     }
   }
   table {
-    float: right;
-    width: 500px;
-    max-width: 100%;
+    //float: right;
+    //width: 500px;
+    //max-width: 100%;
     margin: 0;
     background: transparent;
     td {
@@ -311,3 +324,22 @@ a:hover, a:active {
     }
   }
 }
+
+.separate-password {
+  height: 32px;
+  font-size: 16px;
+  letter-spacing: calc(32px/60*100 - 8px);
+  border: 0 !important;
+  background: transparent !important;
+  background-image: url('../img/spborder.png') !important;
+  background-position: left !important;
+  background-size: auto 100% !important;
+  background-repeat: no-repeat !important;
+  padding-left: calc(32px/60*100*0.4 - 4px) !important;
+  box-sizing: border-box;
+  user-select: none !important;
+  &:focus {
+    outline: none;
+  }
+}
+

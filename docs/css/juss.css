@@ -1480,6 +1480,13 @@ a:hover, a:active {
   padding: .5rem 1rem;
   box-sizing: border-box; }
 
+.banner .slide {
+  height: 400px; }
+
+.banner .slide__nav {
+  right: 50%;
+  transform: translateX(50%); }
+
 .header {
   background-image: url(../img/header.png);
   background-size: cover; }
@@ -1488,14 +1495,13 @@ a:hover, a:active {
     .header p a {
       color: #7fbffa;
       font-size: 0.85rem; }
-  .header .container:before, .header .container:after {
-    content: '';
-    display: block;
-    clear: both; }
+  .header .container {
+    position: relative; }
+    .header .container:before, .header .container:after {
+      content: '';
+      display: block;
+      clear: both; }
   .header table {
-    float: right;
-    width: 500px;
-    max-width: 100%;
     margin: 0;
     background: transparent; }
     .header table td {
@@ -1680,3 +1686,19 @@ a:hover, a:active {
       padding: 0.25rem 1rem;
       background: #e6e6e6;
       color: rgba(0, 0, 0, 0.85); }
+
+.separate-password {
+  height: 32px;
+  font-size: 16px;
+  letter-spacing: calc(32px/60*100 - 8px);
+  border: 0 !important;
+  background: transparent !important;
+  background-image: url("../img/spborder.png") !important;
+  background-position: left !important;
+  background-size: auto 100% !important;
+  background-repeat: no-repeat !important;
+  padding-left: calc(32px/60*100*0.4 - 4px) !important;
+  box-sizing: border-box;
+  user-select: none !important; }
+  .separate-password:focus {
+    outline: none; }

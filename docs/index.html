@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juss, a new simple css framework</title>
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/juss.min.css">
@@ -12,27 +11,37 @@
 
   <div class="header">
     <div class="container">
-      <p class="text-right">
-        <a href="#">设为首页</a> |
-        <a href="#">加入收藏</a>
-      </p>
       <table>
         <tr>
-          <td rowspan="2" style="padding:0;vertical-align:middle;">
-            <a href="#"><img src="img/register.png"></a></td>
-          <td><input type="text" placeholder="帐号"></td>
-          <td class="valid-code">
-            <input type="text" placeholder="验证码">
-            <img src="http://jdv9.com/user/vcode/1497409535">
+          <td>
+            <img class="logo"
+            src="http://jdv9.com/static/images/logo/logo_zcs.png">
           </td>
-        </tr>
-        <tr>
-          <td><input type="password" placeholder="密码"></td>
-          <td class="login-td">
-            <div>
-              <input class="button" type="submit" value="登入">
-              <a href="#">忘记密码</a>
-            </div>
+          <td>
+            <p class="text-right">
+              <a href="#">设为首页</a> |
+              <a href="#">加入收藏</a>
+            </p>
+            <table>
+              <tr>
+                <td rowspan="2" style="padding:0;vertical-align:middle;">
+                  <a href="#"><img src="img/register.png"></a></td>
+                <td><input type="text" placeholder="帐号"></td>
+                <td class="valid-code">
+                  <input type="text" placeholder="验证码">
+                  <img src="http://jdv9.com/user/vcode/1497409535">
+                </td>
+              </tr>
+              <tr>
+                <td><input type="password" placeholder="密码"></td>
+                <td class="login-td">
+                  <div>
+                    <input class="button" type="submit" value="登入">
+                    <a href="#">忘记密码</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>
@@ -42,13 +51,13 @@
   <div class="top-menu">
     <div class="container">
       <ul>
-        <li class="active"><a href="#">首页</a></li>
-        <li><a href="detail.html">开户注册</a></li>
+        <li class="active"><a href="index.html">首页</a></li>
+        <li><a href="form.html">开户注册</a></li>
         <li><a href="#">存款取款</a></li>
         <li><a href="#">常见问题</a></li>
         <li><a href="#">技术问题</a></li>
         <li><a href="#">加盟合作</a></li>
-        <li><a href="#">关于我们</a></li>
+        <li><a href="aboutus.html">关于我们</a></li>
         <li class="extra-gold"><a href="#">最新优惠</a></li>
         <li class="extra-blue"><a href="#">在线客服</a></li>
       </ul>
@@ -59,7 +68,30 @@
 
 <div class="banner">
   <!-- size -->
-  <img src="img/banner.jpg">
+  <div class="slide">
+    <ul class="slide__main">
+      
+      <li><a href="#" style="background-image:url('img/banner.jpg');"></a></li>
+      
+      <li><a href="#" style="background-image:url('img/banner.jpg');"></a></li>
+      
+      <li><a href="#" style="background-image:url('img/banner.jpg');"></a></li>
+      
+      <li><a href="#" style="background-image:url('img/banner.jpg');"></a></li>
+      
+    </ul>
+    <ul class="slide__nav">
+      
+      <li class="active"><a href="#"></a></li>
+      
+      <li ><a href="#"></a></li>
+      
+      <li ><a href="#"></a></li>
+      
+      <li ><a href="#"></a></li>
+      
+    </ul>
+  </div>
 </div>
 
 <div class="main">
@@ -111,9 +143,6 @@
   </div>
 </div>
 
-<div class="footer">
-  <img src="img/footer.jpg">
-</div>
 <div class="footer hide">
   <div class="container">
     <div class="wrap">
@@ -223,5 +252,12 @@
     <script src="https://cdn.bootcss.com/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
     <script src="js/app.min.js"></script>
     
+<script>
+  $(".slide").slide({
+    auto: true,
+    time: 5000
+  });
+</script>
+
   </body>
 </html>

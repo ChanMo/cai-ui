@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juss, a new simple css framework</title>
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- build:css css/juss.min.css -->
@@ -14,27 +13,37 @@
 
   <div class="header">
     <div class="container">
-      <p class="text-right">
-        <a href="#">设为首页</a> |
-        <a href="#">加入收藏</a>
-      </p>
       <table>
         <tr>
-          <td rowspan="2" style="padding:0;vertical-align:middle;">
-            <a href="#"><img src="img/register.png"></a></td>
-          <td><input type="text" placeholder="帐号"></td>
-          <td class="valid-code">
-            <input type="text" placeholder="验证码">
-            <img src="http://jdv9.com/user/vcode/1497409535">
+          <td>
+            <img class="logo"
+            src="http://jdv9.com/static/images/logo/logo_zcs.png">
           </td>
-        </tr>
-        <tr>
-          <td><input type="password" placeholder="密码"></td>
-          <td class="login-td">
-            <div>
-              <input class="button" type="submit" value="登入">
-              <a href="#">忘记密码</a>
-            </div>
+          <td>
+            <p class="text-right">
+              <a href="#">设为首页</a> |
+              <a href="#">加入收藏</a>
+            </p>
+            <table>
+              <tr>
+                <td rowspan="2" style="padding:0;vertical-align:middle;">
+                  <a href="#"><img src="img/register.png"></a></td>
+                <td><input type="text" placeholder="帐号"></td>
+                <td class="valid-code">
+                  <input type="text" placeholder="验证码">
+                  <img src="http://jdv9.com/user/vcode/1497409535">
+                </td>
+              </tr>
+              <tr>
+                <td><input type="password" placeholder="密码"></td>
+                <td class="login-td">
+                  <div>
+                    <input class="button" type="submit" value="登入">
+                    <a href="#">忘记密码</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>

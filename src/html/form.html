@@ -34,7 +34,7 @@
     </tr>
     <tr class="required">
       <td><label>取款密码:</label></td>
-      <td><input type="number"></td>
+      <td><input class="separate-password" type="password" maxlength="4"></td>
     </tr>
     <tr>
       <td><label>电子邮箱:</label></td>
@@ -53,4 +53,16 @@
     <input class="button" type="reset" value="重新填写">
   </div>
 </form>
+{% endblock %}
+{% block js %}
+<script>
+  $(function(){
+    $(".separate-password").on("input", function(){
+      if($(this).val().length == 4){
+        $(this).blur();
+        //$(this).parents("tr").next("tr input").focus();
+      }
+    });
+  });
+</script>
 {% endblock %}

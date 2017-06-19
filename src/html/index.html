@@ -4,7 +4,18 @@
 
 <div class="banner">
   <!-- size -->
-  <img src="img/banner.jpg">
+  <div class="slide">
+    <ul class="slide__main">
+      {% for i in range(0,4) %}
+      <li><a href="#" style="background-image:url('img/banner.jpg');"></a></li>
+      {% endfor %}
+    </ul>
+    <ul class="slide__nav">
+      {% for i in range(0,4) %}
+      <li {% if i === 0 %}class="active"{% endif %}><a href="#"></a></li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
 
 <div class="main">
@@ -56,9 +67,6 @@
   </div>
 </div>
 
-<div class="footer">
-  <img src="img/footer.jpg">
-</div>
 <div class="footer hide">
   <div class="container">
     <div class="wrap">
@@ -160,4 +168,12 @@
     </ul>
   </div>
 </div>
+{% endblock %}
+{% block js %}
+<script>
+  $(".slide").slide({
+    auto: true,
+    time: 5000
+  });
+</script>
 {% endblock %}

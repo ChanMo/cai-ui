@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juss, a new simple css framework</title>
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/juss.min.css">
@@ -12,27 +11,37 @@
 
   <div class="header">
     <div class="container">
-      <p class="text-right">
-        <a href="#">设为首页</a> |
-        <a href="#">加入收藏</a>
-      </p>
       <table>
         <tr>
-          <td rowspan="2" style="padding:0;vertical-align:middle;">
-            <a href="#"><img src="img/register.png"></a></td>
-          <td><input type="text" placeholder="帐号"></td>
-          <td class="valid-code">
-            <input type="text" placeholder="验证码">
-            <img src="http://jdv9.com/user/vcode/1497409535">
+          <td>
+            <img class="logo"
+            src="http://jdv9.com/static/images/logo/logo_zcs.png">
           </td>
-        </tr>
-        <tr>
-          <td><input type="password" placeholder="密码"></td>
-          <td class="login-td">
-            <div>
-              <input class="button" type="submit" value="登入">
-              <a href="#">忘记密码</a>
-            </div>
+          <td>
+            <p class="text-right">
+              <a href="#">设为首页</a> |
+              <a href="#">加入收藏</a>
+            </p>
+            <table>
+              <tr>
+                <td rowspan="2" style="padding:0;vertical-align:middle;">
+                  <a href="#"><img src="img/register.png"></a></td>
+                <td><input type="text" placeholder="帐号"></td>
+                <td class="valid-code">
+                  <input type="text" placeholder="验证码">
+                  <img src="http://jdv9.com/user/vcode/1497409535">
+                </td>
+              </tr>
+              <tr>
+                <td><input type="password" placeholder="密码"></td>
+                <td class="login-td">
+                  <div>
+                    <input class="button" type="submit" value="登入">
+                    <a href="#">忘记密码</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>
@@ -42,13 +51,13 @@
   <div class="top-menu">
     <div class="container">
       <ul>
-        <li class="active"><a href="#">首页</a></li>
-        <li><a href="detail.html">开户注册</a></li>
+        <li class="active"><a href="index.html">首页</a></li>
+        <li><a href="form.html">开户注册</a></li>
         <li><a href="#">存款取款</a></li>
         <li><a href="#">常见问题</a></li>
         <li><a href="#">技术问题</a></li>
         <li><a href="#">加盟合作</a></li>
-        <li><a href="#">关于我们</a></li>
+        <li><a href="aboutus.html">关于我们</a></li>
         <li class="extra-gold"><a href="#">最新优惠</a></li>
         <li class="extra-blue"><a href="#">在线客服</a></li>
       </ul>
@@ -66,7 +75,7 @@
         <div class="detail-left">
         <h2>欢迎光临</h2>
         <ul>
-          <li><a href="#">关于我们</a></li>
+          <li class="active"><a href="aboutus.html">关于我们</a></li>
           <li><a href="#">常见问题</a></li>
           <li><a href="#">一般常见问题</a></li>
           <li><a href="#">技术问题</a></li>
@@ -78,59 +87,7 @@
       </td>
       <td>
         <div class="detail-right">
-        <h4>会员注册</h4>
-        <form>
-          <table>
-            <tr>
-              <td><label>推荐人帐号:</label></td>
-              <td>
-                <input type="text" placeholder="(非必填)">
-              </td>
-            </tr>
-            <tr class="required">
-              <td><label>会员帐号:</label></td>
-              <td>
-                <input type="text">
-                <span>帐号规则：帐号必须为6-15</span>
-              </td>
-            </tr>
-            <tr class="required">
-              <td><label>登录密码:</label></td>
-              <td>
-                <input type="password">
-              </td>
-            </tr>
-            <tr class="required">
-              <td><label>确认密码:</label></td>
-              <td>
-                <input type="password">
-              </td>
-            </tr>
-            <tr class="required">
-              <td><label>真实姓名:</label></td>
-              <td><input type="text"></td>
-            </tr>
-            <tr class="required">
-              <td><label>取款密码:</label></td>
-              <td><input type="number"></td>
-            </tr>
-            <tr>
-              <td><label>电子邮箱:</label></td>
-              <td><input type="email"></td>
-            </tr>
-            <tr class="valid-code">
-              <td><label>验证码:</label></td>
-              <td>
-                <input type="text">
-                <img src="http://jdv9.com/user/vcode/1497409535">
-              </td>
-            </tr>
-          </table>
-          <div class="form-action">
-            <input class="button" type="submit" value="立即提交">
-            <input class="button" type="reset" value="重新填写">
-          </div>
-        </form>
+        
         </div>
       </td>
     </tr>

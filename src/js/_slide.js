@@ -16,9 +16,8 @@
  */
 
 // plugin constructor
-var Slide = function(elements, subjects, options){
+var Slide = function(elements, options){
   this.elements = elements;
-  this.subjects = subjects;
   this.width;
   this.timer;
   this.options = jQuery.extend({}, this.defaults, options);
@@ -29,7 +28,7 @@ var Slide = function(elements, subjects, options){
 Slide.prototype = {
   defaults: {
     auto: 'true',
-    time: 3000
+    time: 5000
   },
 
   // main
@@ -97,6 +96,7 @@ Slide.prototype = {
   // slide auto
   slideAuto: function(){
     var self = this;
+    console.log(self.options);
     if(self.options['auto']){
       self.timer = setInterval(function(){
         self.slideToLeft();
@@ -130,7 +130,7 @@ Slide.prototype = {
 
 }
 
-jQuery.fn.slide = function(subjects, options){
-  new Slide(this, jQuery(subjects), options);
+jQuery.fn.slide = function(options){
+  new Slide(this, options);
   return this;
 };
