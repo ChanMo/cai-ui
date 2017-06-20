@@ -1702,3 +1702,49 @@ a:hover, a:active {
   user-select: none !important; }
   .separate-password:focus {
     outline: none; }
+
+.m-form {
+  background-image: url(http://m.jdv9.com/images/bg2.jpg); }
+  .m-form .top-bar {
+    line-height: 3rem;
+    height: auto;
+    background: rgba(255, 255, 255, 0.54); }
+    .m-form .top-bar span {
+      font-size: 0.95rem;
+      color: rgba(0, 0, 0, 0.87); }
+    .m-form .top-bar a {
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 1.5rem; }
+  .m-form form {
+    padding: 1.5rem; }
+    .m-form form p {
+      font-size: 0.85rem;
+      color: rgba(0, 0, 0, 0.85); }
+    .m-form form .input-field span {
+      line-height: 2rem;
+      font-size: 0.8rem;
+      color: rgba(0, 0, 0, 0.54); }
+    .m-form form .input-field .error {
+      color: rgba(255, 0, 0, 0.54); }
+    .m-form form .input-icon {
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 2px;
+      display: flex; }
+      .m-form form .input-icon i {
+        display: block;
+        min-width: 3rem;
+        line-height: 2.5rem;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.38);
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.72); }
+      .m-form form .input-icon input {
+        margin: 0;
+        border: none;
+        background: rgba(255, 255, 255, 0.12);
+        font-size: 0.85rem; }
+    .m-form form input[type='submit'] {
+      margin: 1.5rem 0 1rem;
+      background: rgba(29, 135, 255, 0.8); }
+    .m-form form a {
+      color: #1d87ff; }
