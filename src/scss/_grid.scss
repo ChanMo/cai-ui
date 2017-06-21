@@ -4,7 +4,9 @@
 
 .wrap {
     position: relative;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
