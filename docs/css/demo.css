@@ -1597,14 +1597,21 @@ a:hover, a:active {
         text-align: center;
         background: #062961;
         color: gold; }
-  .main .wrap .small-6 div {
-    border: 0.3rem solid #194ca3;
-    padding: .8rem;
-    text-align: center;
-    background: #0f3a7b; }
-    .main .wrap .small-6 div h4 {
-      font-size: 1.2rem;
-      color: rgba(255, 255, 255, 0.85); }
+  .main .wrap::before, .main .wrap::after {
+    content: ' ';
+    display: table; }
+  .main .wrap::after {
+    clear: both; }
+  .main .wrap .small-6 {
+    float: left; }
+    .main .wrap .small-6 div {
+      border: 0.3rem solid #194ca3;
+      padding: .8rem;
+      text-align: center;
+      background: #0f3a7b; }
+      .main .wrap .small-6 div h4 {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.85); }
 
 .detail {
   background-image: url(../img/detail_main.jpg); }

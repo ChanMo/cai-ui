@@ -193,7 +193,9 @@ a:hover, a:active {
     }
   }
   .wrap {
+    @include clearfix;
     .small-6 {
+      float: left;
       div {
         border: 0.3rem solid #194ca3;
         padding: .8rem;
